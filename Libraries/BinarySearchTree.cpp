@@ -105,9 +105,9 @@ Position Find( ElementType X, SearchTree T )
         return NULL;
     
     if(X < T->data)
-        Find( X, T->left);
+        return Find( X, T->left);
     else if(X > T->data)
-        Find( X, T->right );
+        return Find( X, T->right );
     else
         return T;
 }
