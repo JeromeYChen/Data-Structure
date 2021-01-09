@@ -125,7 +125,7 @@ Position FindMin( SearchTree T )
     if(T->left == NULL)
         return T;
     else
-        FindMin(T->left);
+        return FindMin(T->left);
 }
 
 //You can't insert a node as root(out of table)
